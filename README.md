@@ -10,7 +10,7 @@ Generally speaking, it's [good practice to steer an input](https://www.arduino.c
 
 I find this approach useful for quick test circuits when connecting buttons using only DuPont jumper wires instead of using breadboards or soldering. This button debouncing library defaults to using the built-in pullup resistors with the `INPUT_PULLUP` pin mode. 
 
-![TODO alt text](https://github.com/agtb/button-debounced/blob/main/extras/button-debounced.png?raw=true)
+![ESP8266 connected to button without additional resistors](https://github.com/agtb/button-debounced/blob/main/extras/button-debounced.png?raw=true)
 
 ## Getting Started
 
