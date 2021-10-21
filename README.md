@@ -4,7 +4,13 @@ A library for simple debouncing of buttons.
 
 ## Description
 
-Enables button presses to be cleanly detected without additional pull-up and pull-down resistors by using internal pull-up resistors.
+Enables button presses to be cleanly detected without additional pull-up and pull-down resistors by using onboard internal pull-up resistors.
+
+Generally speaking, it's [good practice to steer an input](https://www.arduino.cc/en/Tutorial/Foundations/DigitalPins#pullup-resistors-with-pins-configured-as-input) to ground with a pulldown resistor or the high logic level with a pullup resistor (e.g. Arduino 5V, ESP8266 3.3V). However, if you just want to add a simple button on an Arduino or ESP8266 you can use GPIO 0-15, which have built-in pull-up resistors.
+
+I find this approach useful for quick test circuits when connecting buttons using only DuPont jumper wires instead of using breadboards or soldering. This button debouncing library defaults to using the built-in pullup resistors with the `INPUT_PULLUP` pin mode. 
+
+![TODO alt text](https://github.com/agtb/button-debounced/blob/main/extras/button-debounced.png?raw=true)
 
 ## Getting Started
 
@@ -23,7 +29,7 @@ Enables button presses to be cleanly detected without additional pull-up and pul
 
 ## Help
 
-Feel free to open an [issue](https://github.com/agtb/button-debounced/issues) and I'll try to help!
+Feel free to open an [issue](https://github.com/agtb/button-debounced/issues) for help!
 
 ## Authors
 
